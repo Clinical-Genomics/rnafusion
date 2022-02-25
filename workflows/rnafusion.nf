@@ -166,13 +166,12 @@ workflow RNAFUSION {
             index
         )
     }
-    // //Run FusionCatcher
-    // if (params.fusioncatcher){
-    //     FUSIONCATCHER (
-    //         INPUT_CHECK.out.reads,
-    //         params.fusioncatcher_ref
-    //     )
-    // }
+
+    //Run FusionCatcher
+    FUSIONCATCHER (
+        INPUT_CHECK.out.reads,
+        params.fusioncatcher_ref
+    )
 }
 
 /*
